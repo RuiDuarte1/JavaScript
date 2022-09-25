@@ -1,0 +1,17 @@
+{
+  "name": "n1progweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "form.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "chalk-pipe": "^5.1.1",
+    "inquirer": "^9.1.2"
+  }
+}
