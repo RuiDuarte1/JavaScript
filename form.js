@@ -64,6 +64,7 @@ const formulario = [
 
 ];
 
+
 inquirer.prompt(formulario).then(function(answers) {
   console.log("Nome: ", chalk.green(answers.nome));
   console.log("Idade: ", chalk.green(answers.idade));
@@ -73,6 +74,15 @@ inquirer.prompt(formulario).then(function(answers) {
   console.log("Profissão: ", chalk.green(answers.profissao));
   console.log("Estado civil: ", answers.civil);
   console.log('Telefone: ', chalk.green(answers.telefone));
-  
+
+})
+.catch((error) => {
+  if(error.isTtyError){
+    console.log(chalk.orange('Não é possível executar o prompt'));
+  }else{
+    console.log(chalk.orange(error));
+  }
 });
+
+
 
